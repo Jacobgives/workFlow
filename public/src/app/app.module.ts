@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpModule } from '@angular/http';
+import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -10,9 +11,8 @@ import { EarnersComponent } from './earners/earners.component';
 import { SearchComponent } from './search/search.component';
 import { ViewComponent } from './view/view.component';
 import { DashComponent } from './dash/dash.component';
-import { EditComponent } from './edit/edit.component';
 import { RegComponent } from './reg/reg.component';
-
+import { FlowService } from './flow.service';
 
 @NgModule({
   declarations: [
@@ -23,14 +23,15 @@ import { RegComponent } from './reg/reg.component';
     SearchComponent,
     ViewComponent,
     DashComponent,
-    EditComponent,
-    RegComponent
+    EditComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [FlowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
