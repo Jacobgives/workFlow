@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { ViewComponent } from './view/view.component';
 import { DashComponent } from './dash/dash.component';
 import { EditComponent } from './edit/edit.component';
+import { RegComponent } from './reg/reg.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { EditComponent } from './edit/edit.component';
     SearchComponent,
     ViewComponent,
     DashComponent,
-    EditComponent
+    EditComponent,
+    RegComponent
   ],
   imports: [
     BrowserModule,

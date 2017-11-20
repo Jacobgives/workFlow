@@ -1,3 +1,12 @@
-<p>
-  header works!
-</p>
+<h1>workFlow</h1>
+<div *ngIf="!logged">
+<form onsubmit="submit()">
+  <input type="text" name="uname" >
+  <input type="password" name="">
+  <input type="submit" name="" value="">
+</form>
+<h6>or <a href="/register">sign up</a></h6>
+</div>
+<div *ngIf="(logged)">
+  <p>Hey, <a href="/dash">{{logged.uname}}</a> | <a (click)="out()">logout</a></p>
+</div>
