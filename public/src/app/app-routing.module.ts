@@ -9,7 +9,7 @@ import { RegComponent } from './reg/reg.component';
 import { ViewComponent } from './view/view.component';
 
 const routes: Routes = [
-
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

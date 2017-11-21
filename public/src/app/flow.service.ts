@@ -5,12 +5,7 @@ export class FlowService {
 
   constructor() { }
   users(){
-    this._http.get('/users').subscribe((res)=>{console.log(res.json());}, (error)=>{res.send(error);}
+    this._http.get('/users').subscribe((res)=>{console.log(res.json())}
     );
   }
-  companies(){
-    this._http.get('/companies').subscribe((res)=>{console.log(res.json());}, (error)=>{res.send(error);}
-    );
-  }
-  
 }
