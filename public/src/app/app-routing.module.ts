@@ -11,14 +11,18 @@ import { ViewComponent } from './view/view.component';
 const routes: Routes = [
   {
     path:'/',
-    pathMatch: 'full',
     component: HeaderComponent,
     children: [
-      {
+        {
+          path:'/register',
+          pathMatch: 'full',
+          component: RegComponent,
+        },
+        {
         path:'/search',
         pathMatch: 'full',
         component: SearchComponent,
-      }],
+        }],
   },
   {
     path:'/earners',
@@ -36,12 +40,6 @@ const routes: Routes = [
     path:'/dash',
     pathMatch: 'full',
     component: DashComponent,
-    children: [],
-  },
-  {
-    path:'/register',
-    pathMatch: 'full',
-    component: RegComponent,
     children: [],
   },
   {

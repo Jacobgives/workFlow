@@ -23,7 +23,7 @@ import { FlowService } from './flow.service';
     SearchComponent,
     ViewComponent,
     DashComponent,
-    EditComponent
+    RegComponent
   ],
   imports: [
     BrowserModule,
