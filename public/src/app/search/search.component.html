@@ -1,3 +1,9 @@
-<p>
-  search works!
-</p>
+<table>
+  <tr>
+    <input type="text" name="" value="" [(ngModel)]="search" #search="ngModel">
+  </tr>
+  <tr *ngFor="result of results">
+    <td>{{result.uname}}</td>
+    <td><span ngIf="result.total>0">+</span>{{result.total}}</td>
+  </tr>
+</table>

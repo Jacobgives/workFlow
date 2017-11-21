@@ -3,11 +3,15 @@
 <table>
   <tr>
     <td>username:</td>
-    <td><input type="text" name="uname" value=""></td>
+    <td><input type="text" name="uname" value=""
+      [(ngModel)]="uname"
+        #uname="ngModel"></td>
+        <td>{{uname}}</td>
   </tr>
   <tr>
     <td>password:</td>
-    <td><input type="password" name="" value=""></td>
+    <td><input type="password" name="" value="" [(ngModel)]="pass"
+      #pass="ngModel"></td>
   </tr>
 </table>
 </form>

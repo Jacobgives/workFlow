@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.reg(req){
+    }
+  }
 
   ngOnInit() {
   }
-
+  reg(){
+    this.reg(req);
+  }
 }

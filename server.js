@@ -5,7 +5,7 @@ const PORT = 8888;
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, './notes/dist')));
+app.use(express.static(path.join(__dirname, './public/dist')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());

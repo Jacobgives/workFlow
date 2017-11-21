@@ -1,3 +1,9 @@
-<p>
-  leaders works!
-</p>
+<table><ol>
+<div *ngFor="let lead of leads">
+  <li><tr>
+    <td>{{lead.user}}</td>
+    <td>{{lead.total}}</td>
+  </tr></li>
+</div>
+</ol>
+</table>
